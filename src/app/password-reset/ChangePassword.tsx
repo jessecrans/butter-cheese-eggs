@@ -33,7 +33,7 @@ const ChangePassword = () => {
         type='button'
         onClick={async (e) => {
           e.preventDefault();
-          await sendPasswordResetEmail(email);
+          await handlePasswordReset();
         }}
         className='p-2 rounded my-2 bg-blue-500 hover:bg-blue-400 text-white'
       >

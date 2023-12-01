@@ -21,3 +21,15 @@ Page setup
 - components
   - Login component, no seperate page, when user is not logged in we can just display that in a place
     - will handle login registration or login as guest
+
+firestore
+- match history
+- winrate
+- stats
+
+realtime
+- user game lobby
+- game states for all games
+- queue of people looking for match
+
+so player can click on button to look for match, this will put their user id in the queue in the realtime database. Once two people are in the queue they will 
