@@ -16,7 +16,7 @@ const ChangePassword = () => {
     setError({
       message: resetError?.message || userError?.message || ''
     })
-  }, [user])
+  }, [user, resetError, userError])
 
   const handlePasswordReset = async () => {
     if (user?.providerData[0]?.providerId !== 'password') {
@@ -41,6 +41,7 @@ const ChangePassword = () => {
           <button
             className='text-blue-500 hover:text-blue-400 underline mx-1'
             onClick={handlePasswordReset}
+            title='Send Password Change Email'
           >
             Send Password Change Email
           </button>

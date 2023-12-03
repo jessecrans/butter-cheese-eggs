@@ -36,5 +36,4 @@ yarn-error.log*
 next-env.d.ts
 
 # note taking files
-PROJECT_SETUP.md
-```
+NOTES.md

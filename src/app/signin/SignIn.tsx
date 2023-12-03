@@ -30,7 +30,7 @@ const SignIn = () => {
               href='/signup'
               className='text-blue-500 hover:text-blue-400 underline'
             >
-              If you don't have an account, sign up here.
+              If you don&apos;t have an account, sign up here.
             </Link>
             <Link
               href='/password-reset'

@@ -63,6 +63,7 @@ const Profile = () => {
             <button
               className='p-2 rounded bg-sky-500 hover:bg-sky-400 text-white'
               onClick={handleSignOut}
+              title='Sign Out'
             >
               Sign Out
             </button>
@@ -70,6 +71,7 @@ const Profile = () => {
             <button
               className='p-2 rounded bg-red-500 hover:bg-red-400 text-white'
               onClick={handleDelete}
+              title='Delete Account'
             >
               Delete Account
             </button>

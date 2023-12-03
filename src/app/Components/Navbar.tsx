@@ -13,10 +13,10 @@ const Navbar = () => {
 
   useEffect(() => {
     setDisplayName(user?.displayName || '');
-  }, [user]);
+  }, [user, setDisplayName]);
 
   return (
-    <nav className='p-4 mb-2 border-2'>
+    <nav className='p-4 mb-2 border-b-2'>
       <ul className='flex justify-between gap-4 items-center'>
         <div>
           <li className='hover:text-gray-500 text-xl'>
@@ -52,12 +52,12 @@ const Navbar = () => {
               <>
                 <li className='hover:text-gray-500'>
                   <Link href='/signin'>
-                    SignIn
+                    Sign In
                   </Link>
                 </li>
                 <li className='hover:text-gray-500'>
                   <Link href='/signup'>
-                    SignUp
+                    Sign Up
                   </Link>
                 </li>
               </>

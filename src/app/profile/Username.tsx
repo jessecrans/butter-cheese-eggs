@@ -38,6 +38,7 @@ const Username = () => {
             </p>
             <input
               type='text'
+              title='Username'
               value={updateName}
               onChange={(e) => setUpdateName(e.target.value)}
               className='border border-gray-400 p-2 rounded'
@@ -45,6 +46,7 @@ const Username = () => {
             <button
               className='bg-gray-300 hover:bg-gray-200 p-2 rounded mx-2'
               onClick={handleUpdate}
+              title='Change Username'
             >
               Change
             </button>

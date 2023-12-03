@@ -34,6 +34,7 @@ const Email = () => {
                   <button
                     className='text-blue-500 hover:text-blue-400 underline mx-2'
                     onClick={handleSendEmailVerification}
+                    title='Send Verification Email'
                   >
                     {
                       sending ? (

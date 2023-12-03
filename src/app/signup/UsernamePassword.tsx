@@ -16,7 +16,7 @@ const UsernamePassword = () => {
     if (createError) {
       setError(createError);
     }
-  }, [user])
+  }, [user, createError])
 
   const handleSignUp = async (e: any) => {
     e.preventDefault();
@@ -40,6 +40,7 @@ const UsernamePassword = () => {
         value={email}
         onChange={e => setEmail(e.target.value)}
         className='p-2 rounded border-2'
+        title='Email'
       />
       <input
         type='password'
@@ -47,6 +48,7 @@ const UsernamePassword = () => {
         value={password}
         onChange={e => setPassword(e.target.value)}
         className='p-2 rounded border-2'
+        title='Password'
       />
       <input
         type='password'
@@ -54,6 +56,7 @@ const UsernamePassword = () => {
         value={confirmPassword}
         onChange={e => setConfirmPassword(e.target.value)}
         className='p-2 rounded border-2'
+        title='Confirm Password'
       />
       {
         error ? (
@@ -68,6 +71,7 @@ const UsernamePassword = () => {
         type='submit'
         className='p-2 rounded bg-blue-500 hover:bg-blue-600 text-white'
         onClick={handleSignUp}
+        title='Sign Up'
       >
         Sign Up
       </button>

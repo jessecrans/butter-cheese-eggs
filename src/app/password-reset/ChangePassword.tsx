@@ -27,10 +27,12 @@ const ChangePassword = () => {
           value={email}
           onChange={e => setEmail(e.target.value)}
           className='p-2 rounded border-2'
+          title='Email'
         />
       </label>
       <button
         type='button'
+        title='Send Password Reset Email'
         onClick={async (e) => {
           e.preventDefault();
           await handlePasswordReset();
