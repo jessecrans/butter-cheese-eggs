@@ -1,8 +1,6 @@
 "use client";
-import { GoogleAuthProvider, signInWithPopup, getAuth, signOut, User } from "firebase/auth";
-import { auth } from "./firebase";
-import { useState } from "react";
-import SignIn from "./signin/SignIn";
+import SearchGame from "./Components/game_creation/SearchGame";
+import CreateGame from "./Components/game_creation/CreateGame";
 
 export default function Home() {
   return (
@@ -12,6 +10,10 @@ export default function Home() {
       >
         Butter Cheese Eggs
       </h1>
+      <div className="flex justify-center gap-4 m-4 items-start h-fit">
+        <SearchGame />
+        <CreateGame />
+      </div>
     </main>
   )
 }
